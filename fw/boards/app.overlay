@@ -1,0 +1,19 @@
+/* --- app.overlay --- */
+&i2c1 {
+    status = "okay";
+    clock-frequency = <I2C_BITRATE_STANDARD>;
+
+    /* Déclaration du composant RTC I2C */
+    pcf8563: pcf8563@51 {
+        compatible = "nxp,pcf8563";
+        reg = <0x51>; /* Adresse I2C standard du PCF8563 */
+        status = "okay";
+    };
+};
+
+/ {
+    aliases {
+        /* On force l'alias rtc à pointer vers le PCF8563 externe */
+        rtc = &pcf8563; 
+    };
+};

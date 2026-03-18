@@ -1,0 +1,17 @@
+# requirements.txt — HW/SW Co-Design RTC Monitor
+# Testés avec Python 3.10+
+#
+# Installation :
+#   pip install -r requirements.txt
+#
+# Note : tkinter est inclus dans la distribution standard de Python
+# (Windows et macOS). Sous Linux, installer séparément :
+#   sudo apt install python3-tk
+
+# Communication série (UART)
+pyserial>=3.5
+
+# Note sur winsound :
+#   Le module winsound (son d'alarme) est un module built-in Windows.
+#   Il est absent sur Linux/macOS mais l'application le gère
+#   proprement (import conditionnel, HAS_SOUND=False si absent).

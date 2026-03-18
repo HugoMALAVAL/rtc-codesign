@@ -1,0 +1,18 @@
+# Vivado generated files
+hw/vivado/*.jou
+hw/vivado/*.log
+hw/vivado/.Xil/
+hw/vivado/project.runs/
+hw/vivado/project.sim/
+hw/vivado/project.cache/
+hw/vivado/project.hw/
+hw/vivado/project.ip_user_files/
+
+# Python
+sw/__pycache__/
+sw/.venv/
+*.pyc
+
+# OS
+.DS_Store
+Thumbs.db
